@@ -78,7 +78,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=1000
 ```
 
 ```sh
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,unichain-sepolia,l2rn
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 ```
 
 ```sh
