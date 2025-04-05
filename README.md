@@ -78,7 +78,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=1000
 ```
 
 ```sh
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,blast-sepolia,unichain-sepolia,l2rn'
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,unichain-sepolia,l2rn
 ```
 
 ```sh
@@ -97,12 +97,12 @@ export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
 
 ```sh
 export RPC_ENDPOINTS='{
-    "l2rn": ['https://b2n.rpc.caldera.xyz/http', 'https://b2n-testnet.blockpi.network/v1/rpc/public'],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
     "arbt": ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
     "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
+    "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
     "opst": ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
-    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"],
-    "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"]
+    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
 }'
 ```
 ## 9️⃣ Start the Execution node
@@ -132,6 +132,6 @@ Claim your BRN faucet here:
 ## Check Your BRN Earnings  
 
 Connect your wallet here and see how much $BRN you have earned:  
-🔗 [unlock3d.t3rn.io](https://unlock3d.t3rn.io/)
+🔗 [bridge.t2rn.io](https://bridge.t2rn.io/)
 
 
