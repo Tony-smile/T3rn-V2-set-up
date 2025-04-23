@@ -60,49 +60,64 @@ screen -S t3rn
 ## 8️⃣ Set the Environment Variables
 ```sh
 export ENVIRONMENT=testnet
-```
-
-```sh
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
 ```
-
+## Executor Process Flags
 ```sh
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
+export EXECUTOR_ENABLE_BATCH_BIDDING=true
 ```
-
+## Network and Gas Settings
 ```sh
-export EXECUTOR_MAX_L3_GAS_PRICE=1000
-```
+export EXECUTOR_MAX_L3_GAS_PRICE=15000
 
-```sh
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,blast-sepolia,unichain-sepolia,l2rn'
-```
+export EXECUTOR_ENABLED_NETWORKS="arbitrum-sepolia,base-sepolia,optimism-sepolia,l2rn,unichain-sepolia"
 
+export EXECUTOR_NETWORKS_DISABLED='blast-sepolia,monad-testnet,arbitrum,base,optimism,sei-testnet'
+```
+## Private Key
 ```sh
 export PRIVATE_KEY_LOCAL=your_private_key
 ```
-
-```sh
-export EXECUTOR_PROCESS_BIDS_ENABLED=true
-export EXECUTOR_ENABLE_BATCH_BIDING=true
-```
-
+## API Processing Settings
 ```sh
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
 ```
 
+## RPC Endpoints
 ```sh
 export RPC_ENDPOINTS='{
-    "l2rn": ['https://b2n.rpc.caldera.xyz/http', 'https://b2n-testnet.blockpi.network/v1/rpc/public'],
-    "arbt": ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
-    "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
-    "opst": ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
-    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"],
-    "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"]
+    "l2rn": [
+        "https://t3rn-b2n.blockpi.network/v1/rpc/public",
+        "https://b2n.rpc.caldera.xyz/http"
+    ],
+    "arbt": [
+        "https://api.zan.top/arb-sepolia",
+        "https://sepolia-rollup.arbitrum.io/rpc"
+    ],
+    "bast": [
+        "https://base-sepolia.gateway.tenderly.co",
+        "https://base-sepolia-rpc.publicnode.com/"
+    ],
+    "seit": [
+        "https://evm-rpc-testnet.sei-apis.com/"
+    ],
+    "blst": [
+        "https://sepolia.blast.io"
+    ],
+    "mont": [
+        "https://testnet-rpc.monad.xyz"
+    ],
+    "opst": [
+        "https://optimism-sepolia-rpc.publicnode.com/"
+    ],
+    "unit": [
+        "https://unichain-sepolia.g.alchemy.com/v2/demo"
+    ]
 }'
 ```
 ## 9️⃣ Start the Execution node
